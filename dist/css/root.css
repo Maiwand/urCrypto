@@ -1,0 +1,248 @@
+@import url(reset.css);
+
+:root {
+  --primary-100: #2752e7;
+  --primary-80: #5275ec;
+  --primary-60: #7d97f1;
+  --primary-40: #d0dbff;
+  --primary-20: #f5f8fe;
+  --accent-error-100: #e25c5c;
+  --accent-error-80: #e87d7d;
+  --accent-error-60: #ee9d9d;
+  --accent-error-40: #f3bebe;
+  --accent-error-20: #f9dede;
+  --accent-success-100: #53d258;
+  --accent-success-80: #75db79;
+  --accent-success-60: #98e49b;
+  --accent-success-40: #baedbc;
+  --accent-success-20: #ddf6de;
+  --base-100: #111;
+  --base-80: #707070;
+  --base-60: #a0a0a0;
+  --base-40: #cfcfcf;
+  --base-20: #e3e3e3;
+  --white: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+@font-face {
+  font-family: "YukitaSans";
+  src: url("../fonts/YukitaSans-Bold.woff2") format("woff2"),
+    url("../fonts/YukitaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YukitaSans";
+  src: url("../fonts/YukitaSans-Light.woff2") format("woff2"),
+    url("../fonts/YukitaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "YukitaSans";
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* --------------------------------- */
+
+.display-text {
+  font-family: "YukitaSans";
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+/* --------------------------------- */
+[class^="text"] {
+  font-family: Inter;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.text-2xl-bold {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.text-2xl {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.text-xl-bold {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.text-xl {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.45;
+}
+
+.text-lg-bold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.text-lg {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.text-md-bold {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.text-md {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+.text-sm-bold {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.text-sm {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.text-xs-bold {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.text-xs {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.65;
+}
+
+/* -------------------------------- */
+
+/* ------------------------- */
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  /* ------------------------ */
+
+  .display-text {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  /* ------------------------ */
+
+  .text-2xl-bold {
+    line-height: 1.3;
+  }
+
+  p.text-2xl {
+    line-height: 1.3;
+  }
+
+  .text-xl-bold {
+    line-height: 1.35;
+  }
+
+  .text-xl {
+    line-height: 1.35;
+  }
+
+  .text-md-bold {
+    line-height: 1.55;
+  }
+
+  .text-md {
+    line-height: 1.55;
+  }
+
+  .text-sm-bold {
+    line-height: 1.65;
+  }
+
+  .text-sm {
+    line-height: 1.65;
+  }
+}
