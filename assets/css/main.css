@@ -68,6 +68,9 @@
   border-bottom: 1px solid var(--white);
   transition: 0.1s;
 }
+.nav-parent.open-menu .nav-menu {
+  border-bottom-color: var(--base-40);
+}
 nav.open-menu .nav-menu .menu-links-parent {
   display: block !important;
   left: 0;
@@ -100,9 +103,6 @@ nav.open-menu .nav-menu .menu-right-links {
     color: var(--base-80);
   }
 
-  .nav-parent.open-menu .nav-menu {
-    border-bottom-color: var(--base-40);
-  }
   .burger-menu button {
     padding: 19px;
   }
