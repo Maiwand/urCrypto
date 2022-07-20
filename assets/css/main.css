@@ -1,5 +1,12 @@
 @import url(root.css);
-
+@media (max-width: 220px) {
+  body {
+    display: none;
+  }
+  html::after {
+    content: "Please buy a new phone";
+  }
+}
 :root {
   --primary-100: #2752e7;
   --primary-80: #5275ec;
@@ -203,4 +210,36 @@ header {
   .data-item:first-child p:first-child {
     border-top: none;
   }
+}
+
+/* ! Main Content Styling */
+
+.platforms-img-right {
+  background: #e8fafe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.features-parent {
+  max-width: 426px;
+}
+.features-item {
+  border-bottom: 1px solid var(--base-20);
+}
+.features-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.features-item div h5 {
+  color: var(--base-80);
+}
+
+.features-item div:first-child h5 {
+  color: #d0dbff;
+}
+
+.features-item p {
+  color: var(--base-60);
 }
