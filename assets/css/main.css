@@ -1,4 +1,5 @@
 @import url(root.css);
+@import url(tailwind.css);
 @media (max-width: 220px) {
   body {
     display: none;
@@ -171,16 +172,6 @@ header {
   border-radius: 10px;
   border: 1px solid var(--base-20);
 }
-.data-item {
-  padding: 17px 36px;
-  border-right: 1px solid var(--base-30);
-  margin: 32px 0;
-}
-
-.data-item:last-child {
-  border-right: none;
-}
-
 .data-item p {
   text-align: center;
 }
@@ -190,24 +181,39 @@ header {
 .data-item p:last-child {
   color: var(--base-60);
 }
+.data-item {
+  padding: 0 36px;
+  border-right: none;
+  margin-bottom: 49px;
+  margin-top: 0;
+  display: grid;
+  justify-items: center;
+}
+.data-item p:first-child {
+  width: 120px;
+  text-align: center;
+  padding-top: 49px;
+  border-top: 1px solid var(--base-30);
+}
+.data-item:first-child p:first-child {
+  border-top: none;
+}
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .data-item {
-    padding: 0 36px;
-    border-right: none;
-    margin-bottom: 49px;
-    margin-top: 0;
+    padding: 17px 36px;
+    border-right: 1px solid var(--base-30);
+    margin: 32px 0;
     display: grid;
     justify-items: center;
   }
-  .data-item p:first-child {
-    width: 120px;
-    text-align: center;
-    padding-top: 49px;
-    border-top: 1px solid var(--base-30);
+
+  .data-item:last-child {
+    border-right: none;
   }
 
-  .data-item:first-child p:first-child {
+  .data-item p:first-child {
+    padding-top: 0;
     border-top: none;
   }
 }
