@@ -243,3 +243,74 @@ header {
 .features-item p {
   color: var(--base-60);
 }
+
+/*/ Feature Cards */
+.feature-card {
+  margin-bottom: 64px;
+}
+
+.feature-card:last-child {
+  margin-bottom: 0 !important;
+}
+
+.feature-cards-img span {
+  height: calc(100% - 8%);
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  left: 8%;
+  border-radius: 4%;
+  z-index: -9;
+  background: #fff8ee;
+}
+
+.feature-cards-text h2 {
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.feature-cards-text p {
+  color: var(--base-60);
+}
+
+.feature-card.feature-card-reverse .feature-cards-img span {
+  background: #e8fafe;
+}
+
+.title {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title h2 {
+  color: var(--base-80);
+  text-align: center;
+}
+
+.title p {
+  color: var(--base-60);
+  text-align: center;
+}
+
+.starting-process-card {
+  border: 1px solid var(--base-20);
+  border-radius: 20px;
+  text-align: center;
+  background: var(--white);
+}
+.starting-process-card h5 {
+  color: var(--base-80);
+}
+.starting-process-card p {
+  color: var(--base-60);
+}
+
+.starting-process-bg {
+  position: absolute;
+  height: 430px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f8f8fc;
+  z-index: -99;
+}
