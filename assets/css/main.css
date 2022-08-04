@@ -37,7 +37,7 @@
 /* ! Navbar Styling */
 .menu-right-links {
   background: var(--white);
-  position: absolute;
+  position: fixed;
   height: 90px;
   width: 100vw;
   bottom: 0;
@@ -53,15 +53,16 @@
 
 .menu-links-parent {
   background: var(--white);
-  position: absolute;
-  height: calc(100vh - 160px);
+  position: fixed;
+  height: calc(100vh - 80px);
   width: 100vw;
   top: 70px;
-  bottom: 90px;
+  bottom: 0;
   right: 0;
   left: -100%;
   transition: 0.1s;
   visibility: hidden;
+  background: var(--white);
 }
 .menu-links-parent ul li {
   display: block;
@@ -82,6 +83,7 @@
   align-items: center;
   transition: 0.1s;
 }
+
 nav.open-menu .nav-menu .menu-links-parent {
   display: block !important;
   left: 0;
@@ -95,6 +97,13 @@ nav.open-menu .nav-menu .menu-right-links {
 
 .burger-menu a {
   background: url(../img/burger.svg) no-repeat center;
+}
+
+nav.open-menu {
+  position: fixed;
+  width: 100%;
+  background: var(--white);
+  z-index: 99999;
 }
 
 nav.open-menu .nav-menu .burger-menu a {
