@@ -282,7 +282,8 @@ p.text-2xl {
   letter-spacing: normal !important;
   color: #2c3131;
   border-radius: 10px;
-  transition: 0.1s;
+  transition: 0.1s ease;
+  display: inline-block;
 }
 .button-xl {
   padding: 18px 40px;
@@ -294,6 +295,15 @@ p.text-2xl {
 .button-outline {
   border: 1px solid var(--primary-100);
   color: var(--primary-100);
+}
+.button-white {
+  background-color: var(--white);
+  color: var(--base-80);
+  border: none;
+}
+.button-white:hover {
+  color: var(--base-100);
+  padding: 18px 48px;
 }
 .button-outline:hover,
 .button-fill {

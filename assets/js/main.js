@@ -6,3 +6,12 @@ function openMenu() {
     x.className = "nav-parent";
   }
 }
+
+function loadMoreReview() {
+  var x = document.getElementById("review-parent");
+  if (x.className === "review-parent") {
+    x.className += " load-review";
+  } else {
+    x.className = "review-parent";
+  }
+}

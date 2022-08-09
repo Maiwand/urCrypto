@@ -106,7 +106,7 @@
     <main>
       <div class="grid grid-cols-1 lg:flex flex-row flex-row-reverse">
         <div
-          class="px-6 lg:basis-1/2 platforms-img-right lg:px-16 lg:h-[810px] sm:h-[400px]"
+          class="px-6 lg:basis-1/2 platforms-img-right lg:px-16 lg:h-[810px]"
         >
           <img
             class="object-cover hidden lg:block"
@@ -114,7 +114,7 @@
             alt="Platforms"
           />
           <img
-            class="h-full object-contain lg:hidden"
+            class="h-full max-w-[400px] w-full mx-auto object-contain lg:hidden"
             src="assets/img/paralel.png"
             alt="Platforms"
           />
@@ -293,6 +293,305 @@
           </div>
         </div>
         <span class="hidden md:block starting-process-bg"></span>
+      </div>
+      <div id="review-parent" class="review-parent">
+        <div class="relative py-14 sm:py-24 review-section">
+          <div class="review-fade-effect">
+            <a
+              class="button button-xl button-fill sm:hidden"
+              href="javascript:void(0);"
+              onclick="loadMoreReview();"
+              >Load More</a
+            >
+          </div>
+
+          <div class="container mx-auto">
+            <div class="title max-w-fit">
+              <h2>What people are saying</h2>
+            </div>
+
+            <div
+              class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
+              <div class="grid gap-6 h-fit">
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-1.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-5.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-7.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                </div>
+                <!--! Card End -->
+              </div>
+              <div class="grid gap-6 h-fit">
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-6.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-4.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-1.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                </div>
+                <!--! Card End -->
+              </div>
+              <div class="grid gap-6 h-fit">
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-5.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-7.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat."Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-1.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat."Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
+                  </p>
+                </div>
+                <!--! Card End -->
+              </div>
+              <div class="grid gap-6 h-fit">
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-4.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-1.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                  </p>
+                </div>
+                <!--! Card End -->
+                <!-- Card Start -->
+                <div class="review-card-item">
+                  <div class="flex items-center mb-3">
+                    <div class="mr-3">
+                      <img src="assets/img/review-6.jpg" alt="" />
+                    </div>
+                    <div>
+                      <p class="text-md-bold review-card-name">John Doe</p>
+                      <p class="text-sm-bold review-card-position">
+                        CEO Motion Design Agency
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-md review-card review-card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.”
+                  </p>
+                </div>
+                <!--! Card End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative py-14 sm:py-24">
+        <div class="container mx-auto relative !px-0 sm:!px-6">
+          <div
+            class="px-6 py-16 text-center lg:text-left sm:px-24 sm:py-16 rounded-none sm:rounded-[20px] call-to-action-footer relative"
+          >
+            <span class="cta-effect-1"></span>
+            <span class="cta-effect-2"></span>
+            <span class="cta-effect-3 hidden lg:block"></span>
+            <div class="md:w-[530px] z-50 relative">
+              <h3 class="mb-8">Join a new generation of investors</h3>
+              <a class="w-full sm:w-auto button button-white button-xl" href="#"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <span class="cta-coins hidden lg:block"></span>
+        </div>
       </div>
     </main>
     <br />

@@ -343,3 +343,175 @@ header {
   background: #f8f8fc;
   z-index: -99;
 }
+
+/*  Review Section */
+
+.review-section {
+  height: 870px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.review-card-item {
+  padding: 20px 16px;
+  border: 1px solid var(--base-20);
+  border-radius: 10px;
+}
+
+.review-card-item .review-card-name {
+  color: var(--base-80);
+}
+.review-card-item .review-card-position {
+  color: var(--base-40);
+}
+.review-card-item .review-card-text {
+  color: var(--base-60);
+}
+
+.review-card-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.review-fade-effect {
+  background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  transition: 0.2s;
+}
+
+.load-review .review-section .review-fade-effect {
+  bottom: -350px;
+}
+
+.load-review .review-section {
+  height: fit-content;
+}
+
+/*  Call to Action Footer */
+
+.call-to-action-footer {
+  background: var(--primary-100);
+  overflow: hidden;
+}
+.call-to-action-footer h3 {
+  color: var(--white);
+}
+
+.cta-effect-1::before,
+.cta-effect-1::after {
+  content: "";
+  background: #406eec;
+  position: absolute;
+  border-radius: 50%;
+}
+.cta-effect-1::before {
+  height: 230px;
+  width: 230px;
+  top: -131px;
+  left: -161px;
+}
+
+.cta-effect-1::after {
+  height: 921px;
+  width: 921px;
+  top: 95px;
+  right: -691px;
+}
+
+.cta-effect-2::before,
+.cta-effect-2::after {
+  content: "";
+  border: 1px solid #d0dbff;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cta-effect-2::after {
+  height: 430px;
+  width: 430px;
+  left: 16px;
+  bottom: -390px;
+}
+
+.cta-effect-2::before {
+  width: 276px;
+  height: 276px;
+  top: -56px;
+  right: -182px;
+}
+
+.cta-effect-3 {
+  background: url(../img/dots.svg) no-repeat center;
+  position: absolute;
+  right: 140px;
+  bottom: -14px;
+  width: 205px;
+  height: 200px;
+}
+
+@media (min-width: 1024px) {
+  .cta-effect-1::before {
+    top: -120px;
+    left: -106px;
+  }
+
+  .cta-effect-1::after {
+    top: -46px;
+    right: -480px;
+  }
+
+  .cta-effect-2::before {
+    top: -134px;
+    right: -64px;
+  }
+  .cta-effect-2::after {
+    height: 430px;
+    width: 430px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: -310px;
+  }
+
+  .cta-effect-3 {
+    right: 100px;
+  }
+
+  .cta-coins {
+    background: url(../img/crypto-coins.svg);
+    position: absolute;
+    width: 313px;
+    height: 374px;
+    right: 69px;
+    bottom: 56px;
+    zoom: 0.9;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cta-effect-1::after {
+    right: -360px;
+  }
+
+  .cta-effect-3 {
+    background: url(../img/dots.svg) no-repeat center;
+    position: absolute;
+    right: 140px;
+    bottom: -14px;
+    width: 205px;
+    height: 200px;
+  }
+  .cta-coins {
+    zoom: 1;
+    bottom: 23px;
+  }
+}
